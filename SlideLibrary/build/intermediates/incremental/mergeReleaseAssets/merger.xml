@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\MyAndroid\Project\MyTest\SlideLibrary\src\main\assets"/><source path="E:\MyAndroid\Project\MyTest\SlideLibrary\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\MyAndroid\Project\MyTest\SlideLibrary\src\release\assets"/></dataSet></merger>
