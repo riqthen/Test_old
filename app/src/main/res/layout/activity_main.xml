@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.riq.test.MainActivity">
+    tools:context="com.riq.test.组件.MainActivity">
 
-    <TextView
+    <AutoCompleteTextView
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

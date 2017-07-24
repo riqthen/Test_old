@@ -144,6 +144,30 @@ public class Utils {
         public static boolean isHanzi(String text) {
             return Pattern.compile("[\u4e00-\u9fa5]").matcher(text).matches();
         }
+
+        /**
+         * 判断是否是身份证号码
+         *
+         * @param idNumber
+         * @return
+         */
+        public static boolean isIdNumber(String idNumber) {
+            if (idNumber.length() != 18) {
+                return false;
+            }
+            char[] numbers = idNumber.toCharArray();
+            int l_jyw = 0;
+            int[] wi = new int[]{7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1};
+            char[] checkCodes = new char[]{'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'};
+            for (int i = 0; i < 17; i++) {
+                if (numbers[i] < '0' || numbers[i] > '9') {
+                    return false;
+                }
+                l_jyw += (numbers[i] - '0') * wi[i];
+            }
+            l_jyw = l_jyw % 11;
+            return checkCodes[l_jyw] == numbers[17];
+        }
     }
 
     /*
