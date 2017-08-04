@@ -1,4 +1,4 @@
-package com.riq.test.组件;
+package com.riq.test.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import com.riq.test.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * AutoCompleteTextView
+ */
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.tv)
