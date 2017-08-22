@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity"></activity>
-        <activity android:name=".class_method.Main2Activity">
+        <activity android:name=".view.MainActivity" />
+        <activity android:name=".class_method.Main2Activity" />
+        <activity android:name=".git.eventbus.Main3Activity"></activity>
+        <activity android:name=".git.eventbus.Main4Activity" />
+        <activity android:name=".fragment.Main5Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
